@@ -1,0 +1,2 @@
+axis_camera:camera_info_manager_py:odva_ethernetip:omron_os32c_driver:orientus_driver:orientus_sdk_c
+-DCATKIN_DEVEL_PREFIX=/home/automation/laser_ws/devel -DCMAKE_INSTALL_PREFIX=/home/automation/laser_ws/install -G Unix Makefiles

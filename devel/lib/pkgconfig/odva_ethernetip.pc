@@ -1,0 +1,8 @@
+prefix=/home/automation/laser_ws/devel
+
+Name: odva_ethernetip
+Description: Description of odva_ethernetip
+Version: 0.1.1
+Cflags: -I/home/automation/laser_ws/src/odva_ethernetip/include -I/usr/include
+Libs: -L/home/automation/laser_ws/devel/lib -lodva_ethernetip /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: 

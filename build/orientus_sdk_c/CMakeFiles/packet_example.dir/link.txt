@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/packet_example.dir/src/packet_example.c.o  -o /home/automation/laser_ws/devel/lib/orientus_sdk_c/packet_example -rdynamic /home/automation/laser_ws/devel/lib/liborientus_sdk_c.so /home/automation/laser_ws/devel/lib/liborientus_sdk_c_rs232.so -Wl,-rpath,/home/automation/laser_ws/devel/lib: 

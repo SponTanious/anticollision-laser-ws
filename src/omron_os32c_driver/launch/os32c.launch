@@ -1,0 +1,17 @@
+<launch>
+  <arg name="host" default="192.168.1.7" />
+
+  <node pkg="omron_os32c_driver" type="omron_os32c_node" name="omron_os32c_node">
+    <param name="host" value="$(arg host)" />
+    <param name="frame_id" value="laser" />
+    <param name="start_angle" value="2.2899" />
+    <param name="end_angle" value="-2.2899" />
+  </node>
+
+  <node pkg="orientus_driver" type="orientus_node" name="orientus_node">
+  </node>
+
+  <node pkg="omron_os32c_driver" type="listener.py" name="listener">
+  </node>
+
+</launch>

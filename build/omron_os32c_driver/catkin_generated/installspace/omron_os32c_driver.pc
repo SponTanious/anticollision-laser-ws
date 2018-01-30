@@ -1,0 +1,8 @@
+prefix=/home/automation/laser_ws/install
+
+Name: omron_os32c_driver
+Description: Description of omron_os32c_driver
+Version: 0.1.1
+Cflags: -I/home/automation/laser_ws/install/include -I/usr/include
+Libs: -L/home/automation/laser_ws/install/lib -lomron_os32c /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: odva_ethernetip roscpp sensor_msgs

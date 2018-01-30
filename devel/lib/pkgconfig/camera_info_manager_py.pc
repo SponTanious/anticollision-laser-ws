@@ -1,0 +1,8 @@
+prefix=/home/automation/laser_ws/devel
+
+Name: camera_info_manager_py
+Description: Description of camera_info_manager_py
+Version: 0.2.3
+Cflags: 
+Libs: -L/home/automation/laser_ws/devel/lib 
+Requires: sensor_msgs
