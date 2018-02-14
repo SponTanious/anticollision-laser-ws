@@ -10,7 +10,7 @@ def logScanner(data):
     #rospy.loginfo(max(data.ranges))
 
 def logImu(data):
-    f.write(str(data.orientation)+'\n')
+    g.write(str(data.orientation)+'\n')
 
     #rospy.loginfo(max(data.orientation))
 
@@ -25,6 +25,8 @@ def listener():
 
 if __name__ == '__main__':
     f = open('/home/automation/laser_ws/laserData.txt', 'w')
+    g = open('/home/automation/laser_ws/imuData.txt', 'w')
     listener()
     f.close
+    g.close()
 

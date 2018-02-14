@@ -111,6 +111,7 @@ int main(int argc, char *argv[])
       // Stamp and publish message.
       laserscan_msg.header.stamp = ros::Time::now();
       laserscan_msg.header.seq++;
+      laserscan_msg.intensities = laserscan_msg.ranges;
       laserscan_pub.publish(laserscan_msg);
 
       // Every tenth message received, send the keepalive message in response.

@@ -16,6 +16,10 @@
 #include "diagnostic_updater/diagnostic_updater.h"
 #include "diagnostic_updater/DiagnosticStatusWrapper.h"
 
+#include "tf/transform_datatypes.h"
+#include "ros/console.h"
+
+
 class OrientusNode {
 private:
   ros::NodeHandle nh_;
@@ -358,11 +362,30 @@ private:
 
     imu_msg.header.stamp = ros::Time::now();
     imu_msg.header.frame_id = frame_id_;
+    
+    //***<TRANSFORM>***
+    
+    tf::Quaternion q(quaternion_packet_.orientation[1], quaternion_packet_.orientation[2], quaternion_packet_.orientation[3],quaternion_packet_.orientation[0]);
+    tf::Matrix3x3 m(q);
+    double roll, pitch, yaw;
+    m.getRPY(roll, pitch, yaw);
+    
+    tf::Quaternion q2;
+    q2.setRPY(roll+3.141459265359, -pitch, -yaw);
+    
+    geometry_msgs::Quaternion q_msg;
+    quaternionTFToMsg(q2, q_msg);
+    
+    imu_msg.orientation = q_msg;
+    
+    //***</Transform>***
 
-    imu_msg.orientation.x = quaternion_packet_.orientation[1];
-    imu_msg.orientation.y = quaternion_packet_.orientation[2];
-    imu_msg.orientation.z = quaternion_packet_.orientation[3];
-    imu_msg.orientation.w = quaternion_packet_.orientation[0];
+    //imu_msg.orientation.x = quaternion_packet_.orientation[1];
+    //imu_msg.orientation.y = quaternion_packet_.orientation[2];
+    //imu_msg.orientation.z = quaternion_packet_.orientation[3];
+    //imu_msg.orientation.w = quaternion_packet_.orientation[0];
+    
+    
     imu_msg.orientation_covariance[0] = orientation_covariance[0];
     imu_msg.orientation_covariance[4] = orientation_covariance[4];
     imu_msg.orientation_covariance[8] = orientation_covariance[8];
@@ -382,10 +405,15 @@ private:
     imu_msg.angular_velocity.z = raw_sensors_packet_.gyroscopes[2];
     imu_msg.angular_velocity_covariance[0] = -1;
 
-    imu_msg.linear_acceleration.x = raw_sensors_packet_.accelerometers[0];
-    imu_msg.linear_acceleration.y = raw_sensors_packet_.accelerometers[1];
-    imu_msg.linear_acceleration.z = raw_sensors_packet_.accelerometers[2];
+    imu_msg.linear_acceleration.x = -raw_sensors_packet_.accelerometers[0];
+    imu_msg.linear_acceleration.y = -raw_sensors_packet_.accelerometers[1];
+    imu_msg.linear_acceleration.z = -raw_sensors_packet_.accelerometers[2];
     imu_msg.linear_acceleration_covariance[0] = -1;
+    
+    //ROS_DEBUG("YAY");
+    //ROS_DEBUG_STREAM("x: " << -raw_sensors_packet_.accelerometers[0]);
+    //ROS_DEBUG_STREAM("y: " << -raw_sensors_packet_.accelerometers[1]);
+    //ROS_DEBUG_STREAM("z: " << -raw_sensors_packet_.accelerometers[2]);
 
     imu_pub_.publish(imu_msg);
   }

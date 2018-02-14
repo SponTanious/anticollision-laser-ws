@@ -9,8 +9,16 @@ orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/l
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/diagnostic_msgs/KeyValue.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/diagnostic_updater/DiagnosticStatusWrapper.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/diagnostic_updater/diagnostic_updater.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Point.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/PointStamped.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Pose.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/PoseStamped.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Quaternion.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/QuaternionStamped.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Transform.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/TransformStamped.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Vector3.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/geometry_msgs/Vector3Stamped.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/ros/advertise_options.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/ros/advertise_service_options.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/ros/assert.h
@@ -71,6 +79,14 @@ orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/l
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/sensor_msgs/MagneticField.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/sensor_msgs/Temperature.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/std_msgs/Header.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/Matrix3x3.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/MinMax.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/QuadWord.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/Quaternion.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/Scalar.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/Transform.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/LinearMath/Vector3.h
+orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/tf/transform_datatypes.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/xmlrpcpp/XmlRpcDecl.h
 orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o: /opt/ros/lunar/include/xmlrpcpp/XmlRpcValue.h
 
