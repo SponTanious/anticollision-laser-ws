@@ -1,2 +1,2 @@
-axis_camera:camera_info_manager_py:odva_ethernetip:omron_os32c_driver:orientus_driver:orientus_sdk_c
+axis_camera:camera_info_manager_py:geographic_info/geodesy:geographic_info/geographic_info:geographic_info/geographic_msgs:odva_ethernetip:omron_os32c_driver:orientus_driver:orientus_sdk_c:robot_localization:unique_identifier/unique_id:unique_identifier/unique_identifier:unique_identifier/uuid_msgs:viso2/libviso2:viso2/viso2:viso2/viso2_ros
 -DCATKIN_DEVEL_PREFIX=/home/automation/laser_ws/devel -DCMAKE_INSTALL_PREFIX=/home/automation/laser_ws/install -G Unix Makefiles

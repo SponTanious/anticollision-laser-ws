@@ -112,6 +112,16 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -122,16 +132,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -196,109 +196,49 @@ clean_test_results_camera_info_manager_py/fast:
 .PHONY : clean_test_results_camera_info_manager_py/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
+camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
+roscpp_generate_messages_py: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
-.PHONY : run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test
+.PHONY : roscpp_generate_messages_py
 
 # fast build rule for target.
-run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/build
-.PHONY : run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast
+roscpp_generate_messages_py/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
+camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-run_tests_camera_info_manager_py_rostest: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
+sensor_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : run_tests_camera_info_manager_py_rostest
+.PHONY : sensor_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-run_tests_camera_info_manager_py_rostest/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/build
-.PHONY : run_tests_camera_info_manager_py_rostest/fast
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
+camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-_run_tests_camera_info_manager_py: camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
+rosgraph_msgs_generate_messages_eus: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
-.PHONY : _run_tests_camera_info_manager_py
+.PHONY : rosgraph_msgs_generate_messages_eus
 
 # fast build rule for target.
-_run_tests_camera_info_manager_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/build.make camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/build
-.PHONY : _run_tests_camera_info_manager_py/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
-
-# Convenience name for target.
-run_tests_camera_info_manager_py: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
-
-.PHONY : run_tests_camera_info_manager_py
-
-# fast build rule for target.
-run_tests_camera_info_manager_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/build
-.PHONY : run_tests_camera_info_manager_py/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
-
-# Convenience name for target.
-run_tests_camera_info_manager_py_rostest_tests_unit_test.test: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
-
-.PHONY : run_tests_camera_info_manager_py_rostest_tests_unit_test.test
-
-# fast build rule for target.
-run_tests_camera_info_manager_py_rostest_tests_unit_test.test/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/build
-.PHONY : run_tests_camera_info_manager_py_rostest_tests_unit_test.test/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule:
@@ -316,34 +256,19 @@ _run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast:
 .PHONY : _run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+roscpp_generate_messages_lisp: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : roscpp_generate_messages_lisp
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
+roscpp_generate_messages_lisp/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -361,19 +286,19 @@ roscpp_generate_messages_cpp/fast:
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+run_tests_camera_info_manager_py: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_py
+.PHONY : run_tests_camera_info_manager_py
 
 # fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
+run_tests_camera_info_manager_py/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py.dir/build
+.PHONY : run_tests_camera_info_manager_py/fast
 
 # Convenience name for target.
 camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
@@ -406,51 +331,6 @@ sensor_msgs_generate_messages_lisp/fast:
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
-
-# Convenience name for target.
-_run_tests_camera_info_manager_py_rostest: camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
-
-.PHONY : _run_tests_camera_info_manager_py_rostest
-
-# fast build rule for target.
-_run_tests_camera_info_manager_py_rostest/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/build.make camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/build
-.PHONY : _run_tests_camera_info_manager_py_rostest/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -481,154 +361,34 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+run_tests_camera_info_manager_py_rostest_tests_unit_test.test: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_cpp
+.PHONY : run_tests_camera_info_manager_py_rostest_tests_unit_test.test
 
 # fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
+run_tests_camera_info_manager_py_rostest_tests_unit_test.test/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_unit_test.test.dir/build
+.PHONY : run_tests_camera_info_manager_py_rostest_tests_unit_test.test/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make camera_info_manager_py/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make camera_info_manager_py/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
-
-# Convenience name for target.
-generate_camera_info: camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
-
-.PHONY : generate_camera_info
-
-# fast build rule for target.
-generate_camera_info/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/generate_camera_info.dir/build.make camera_info_manager_py/CMakeFiles/generate_camera_info.dir/build
-.PHONY : generate_camera_info/fast
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
@@ -646,19 +406,49 @@ roscpp_generate_messages_eus/fast:
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+generate_camera_info: camera_info_manager_py/CMakeFiles/generate_camera_info.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
+.PHONY : generate_camera_info
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+generate_camera_info/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/generate_camera_info.dir/build.make camera_info_manager_py/CMakeFiles/generate_camera_info.dir/build
+.PHONY : generate_camera_info/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
+
+# Convenience name for target.
+run_tests_camera_info_manager_py_rostest: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/rule
+
+.PHONY : run_tests_camera_info_manager_py_rostest
+
+# fast build rule for target.
+run_tests_camera_info_manager_py_rostest/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest.dir/build
+.PHONY : run_tests_camera_info_manager_py_rostest/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
@@ -676,19 +466,79 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
-.PHONY : roscpp_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_py
 
 # fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make camera_info_manager_py/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
+
+# Convenience name for target.
+_run_tests_camera_info_manager_py: camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/rule
+
+.PHONY : _run_tests_camera_info_manager_py
+
+# fast build rule for target.
+_run_tests_camera_info_manager_py/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/build.make camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py.dir/build
+.PHONY : _run_tests_camera_info_manager_py/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make camera_info_manager_py/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
+
+# Convenience name for target.
+_run_tests_camera_info_manager_py_rostest: camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/rule
+
+.PHONY : _run_tests_camera_info_manager_py_rostest
+
+# fast build rule for target.
+_run_tests_camera_info_manager_py_rostest/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/build.make camera_info_manager_py/CMakeFiles/_run_tests_camera_info_manager_py_rostest.dir/build
+.PHONY : _run_tests_camera_info_manager_py_rostest/fast
+
+# Convenience name for target.
+camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule:
+	cd /home/automation/laser_ws/build && $(MAKE) -f CMakeFiles/Makefile2 camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
+.PHONY : camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
+
+# Convenience name for target.
+run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test: camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/rule
+
+.PHONY : run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test
+
+# fast build rule for target.
+run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast:
+	cd /home/automation/laser_ws/build && $(MAKE) -f camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/build.make camera_info_manager_py/CMakeFiles/run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test.dir/build
+.PHONY : run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test/fast
 
 tests/generate_camera_info.o: tests/generate_camera_info.cpp.o
 
@@ -730,41 +580,31 @@ help:
 	@echo "... install/local"
 	@echo "... _run_tests_camera_info_manager_py_rostest_tests_unit_test.test"
 	@echo "... clean_test_results_camera_info_manager_py"
-	@echo "... test"
-	@echo "... run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test"
-	@echo "... run_tests_camera_info_manager_py_rostest"
-	@echo "... _run_tests_camera_info_manager_py"
-	@echo "... run_tests_camera_info_manager_py"
-	@echo "... run_tests_camera_info_manager_py_rostest_tests_unit_test.test"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... _run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... run_tests_camera_info_manager_py"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... _run_tests_camera_info_manager_py_rostest"
-	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... generate_camera_info"
+	@echo "... run_tests_camera_info_manager_py_rostest_tests_unit_test.test"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... generate_camera_info"
+	@echo "... run_tests_camera_info_manager_py_rostest"
 	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... _run_tests_camera_info_manager_py"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... _run_tests_camera_info_manager_py_rostest"
+	@echo "... test"
+	@echo "... run_tests_camera_info_manager_py_rostest_tests_load_cpp_camera_info.test"
 	@echo "... tests/generate_camera_info.o"
 	@echo "... tests/generate_camera_info.i"
 	@echo "... tests/generate_camera_info.s"

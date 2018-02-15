@@ -11,7 +11,12 @@
   <node pkg="orientus_driver" type="orientus_node" name="orientus_node">
   </node>
   
-  <node pkg="axis_camera" type="axis.py" name="axis" />
+  <node pkg="axis_camera" type="axis.py" name="axis">
+    <param name="hostname" value="192.168.1.98" />
+    <param name="username" value="root" />
+    <param name="password" value="root" />
+    <param name="camera_info_url" value="" />
+  </node>
 
   <node name="IMU_tf2_broadcaster" pkg="omron_os32c_driver" type="IMU_tf2_broadcaster.py"></node>
   
